@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="skin.css">
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <h3 id="info">First choose Bat or Bowl</h3>
+        <ul id="content">
+            <li id='choose1'  onclick="choose(event)" >odd</li>
+            <li id='choose2'  onclick="choose(event)">even</li>
+        </ul>
+    <div id="both">
+    <div id="user">
+        <h4 id="userchoose"></h4>
+        <img id="useradd" src="image/one.jpg">
+        <div id="hide">
+            <ul>
+                <li id='ele' onclick="val(event)">1</li>
+                <li id='ele' onclick="val(event)">2</li>
+                <li id='ele' onclick="val(event)">3</li>
+                <li id='ele' onclick="val(event)">4</li>
+                <li id='ele' onclick="val(event)">5</li>
+                <li id='ele' onclick="val(event)">6</li>
+            </ul>
+        </div>
+        <button onclick="hide()">hide</button>
+        <h3 style="display: inline-block;">score :<h4 id="uscore" style="display: inline;">0</h4></h3>
+        
+    </div>
+    <div id="random">
+        <h4 id="systemchoose"></h4>
+        <img id="sysadd" src="image/one.jpg"><br/>
+        <h3 style="display: inline-block;">score :<h4 id="sscore" style="display: inline;">0</h4></h3>
+    </div>
+    </div>
+     <script src="https://cdn.jsdelivr.net/npm.js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="action.js"></script>
+</body>
+</html>
