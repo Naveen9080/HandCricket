@@ -8,7 +8,7 @@ body{
     background-color:aquamarine;
     text-align: center;
     align-self: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 #user{
     /* display: flex; */
@@ -27,6 +27,10 @@ body{
     padding: 2px;
     color: aliceblue;
     background-color: rgb(12, 62, 224);
+}
+img{
+    width: 25%;
+    height: 25%;
 }
 @media(width<=740){
    
