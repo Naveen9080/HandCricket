@@ -5,14 +5,39 @@
 body{
     width: 100%;
     height: auto;
-    background-color:aquamarine;
+    background-image: url("./image/back.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
     text-align: center;
     align-self: center;
+    color:white;
     /* overflow: hidden; */
+}
+button{
+   padding: 5px;
+   border: 2px solid black;
+   background-color: white;
+   color: black; 
+   background-color: orangered;
+}
+#scr,#scr1,#sscore,#uscore{
+   background-color: rgb(44, 131, 245);
+   display: inline-block;
+   padding: 3px;
+   border-radius: 5px;
+}
+#scr1{
+  margin-top: 25px;
+}
+#sscore,#uscore{
+    background-color: black;
+    padding:5px;
+    font-size: large;
 }
 #user{
     /* display: flex; */
      margin-left: 50px; 
+     font: bold;
 }
 #random{
     /* display: flex; */
