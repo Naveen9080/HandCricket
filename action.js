@@ -1,7 +1,7 @@
 let map= new Map();
 map.set(1,'image/one.jpg');
 map.set(2,'image/two.jpg');
-map.set(3,'image/three.jpg');
+map.set(3,'image/three.jpg');//hello
 map.set(4,'image/four.png');
 map.set(5,'image/five.png');
 map.set(6,'image/six.png');
