@@ -2,16 +2,31 @@
     margin: 0;
     padding: 0;
 }
-body{
-    width: 100%;
-    height: auto;
+html,body,.bg-image{
+    height: 100%;
+}
+.bg-image{
     background-image: url("./image/back.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    filter:blur(10px);
+    position: relative;
+}
+body{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    background-color: rgb(214, 20, 20);
+}
+.content{
+    
     text-align: center;
     align-self: center;
     color:white;
-    /* overflow: hidden; */
+    position: absolute;
+    top: 5px;
+    left: 20%;
+    overflow: hidden;
 }
 button{
    padding: 5px;
@@ -49,20 +64,30 @@ button{
 #choose1,#choose2{
     border: 2px solid black;
     border-radius: 25%;
-    padding: 2px;
+    padding: 5px;
     color: aliceblue;
     background-color: rgb(12, 62, 224);
+    display: inline;
+    cursor: pointer;
+    margin:10px;
 }
-img{
-    width: 25%;
-    height: 25%;
+#content{
+    margin-top: 5px;
 }
+/* img{
+    width:10%;
+    height: 10%;
+} */
 @media(width<=740){
    
 }
 #useradd,#sysadd{
-  width: 100%;
+  width: 80%;
   height:80%;
+}
+#useradd{
+    width: 75%;
+    height: 70%;
 }
 #ele{
    border: 2px solid whitesmoke;
@@ -79,17 +104,51 @@ img{
     text-align: center;
 }
 li{
-    display: inline-block;
     list-style: none;
+    cursor: pointer;
 }
 button{
     display: block;
 }
-
+#useradd{
+    display: inline;
+}
 #both{
     display: flex;
     justify-content: center;
+    padding-top: 30px;
 }
-li{
+ul{
+    display: inline;
+    padding-right: 5px;
+    padding-top: 50px;
+}
+h1{
+    margin-bottom: 10px;
+}
+#fle{
+    display: flex;
+}
+#choice{
+    background-color: white;
+    color: black;
+    padding: 10px;
+    width: max max-content;
+    left: 0;
+    /* display: flex; */
+    padding: 10px;
+    justify-content: center;
+    /* align-items: center; */
+}
+#res{
+    position: absolute;
+    top:5px;
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+    right: 10px;
     cursor: pointer;
+}
+#res:hover{
+    background-color: gray;
 }
